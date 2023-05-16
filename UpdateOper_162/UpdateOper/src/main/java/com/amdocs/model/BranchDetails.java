@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name= "branch_details")
-public class UpdateDetails {
+public class BranchDetails {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
