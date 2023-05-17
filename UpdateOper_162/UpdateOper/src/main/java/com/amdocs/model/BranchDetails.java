@@ -11,8 +11,8 @@ import jakarta.persistence.Table;
 public class BranchDetails {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	private String branch_name;
 	private String branch_Address;
 	private String branch_code;
@@ -27,10 +27,10 @@ public class BranchDetails {
 	public String getBranch_name() {
 		return branch_name;
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public void setBranch_name(String branch_name) {
@@ -88,10 +88,4 @@ public class BranchDetails {
 				+ ", branch_zipcode=" + branch_zipcode + "]";
 	}
 	
-
-	
-	
-	
-	
-
 }
