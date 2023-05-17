@@ -11,14 +11,17 @@ import com.amdocs.service.BranchDetailsService;
 @Service
 public class BranchDetailsServiceImpl implements BranchDetailsService {
 
+	
 	@Autowired
 	private BranchDetailsRepository branchDetailsRepository;
 	
 	@Override
-	public BranchDetails updateBranchDetails(BranchDetails branchDetails) {
-		BranchDetails branchDetailsObj = branchDetailsRepository.save(branchDetails);
-		return branchDetailsObj;
+	public BranchDetails getBranchDetailsById(Integer id) {
+		BranchDetails branchDetails3 = branchDetailsRepository.findById(id);
+		return branchDetails3;
 	}
+	
+
 	
 
 }

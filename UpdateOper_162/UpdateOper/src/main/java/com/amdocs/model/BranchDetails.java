@@ -23,14 +23,15 @@ public class BranchDetails {
 	private String branch_zipcode;
 	
 //	generating getter and setters
+	
+	public String getBranch_name() {
+		return branch_name;
+	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	public String getBranch_name() {
-		return branch_name;
 	}
 	public void setBranch_name(String branch_name) {
 		this.branch_name = branch_name;
@@ -81,11 +82,14 @@ public class BranchDetails {
 //	Generating toString() method
 	@Override
 	public String toString() {
-		return "UpdateDetails [id=" + id + ", branch_name=" + branch_name + ", branch_Address=" + branch_Address
-				+ ", branch_code=" + branch_code + ", branch_ifsc=" + branch_ifsc + ", branch_city=" + branch_city
-				+ ", branch_state=" + branch_state + ", branch_country=" + branch_country + ", branch_zipcode="
-				+ branch_zipcode + "]";
+		return "BranchDetails [id=" + id + ", branch_name=" + branch_name + ", branch_Address="
+				+ branch_Address + ", branch_code=" + branch_code + ", branch_ifsc=" + branch_ifsc + ", branch_city="
+				+ branch_city + ", branch_state=" + branch_state + ", branch_country=" + branch_country
+				+ ", branch_zipcode=" + branch_zipcode + "]";
 	}
+	
+
+	
 	
 	
 	

@@ -1,13 +1,17 @@
 package com.amdocs.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.io.Serializable;
+
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.amdocs.model.BranchDetails;
 
-import jakarta.persistence.Id;
+
 
 @Repository
-public interface BranchDetailsRepository extends JpaRepository<BranchDetails, Id> {
+public interface BranchDetailsRepository extends CrudRepository<BranchDetails, Serializable> {
+	
+	public BranchDetails findById(Integer id);	
 
 }
