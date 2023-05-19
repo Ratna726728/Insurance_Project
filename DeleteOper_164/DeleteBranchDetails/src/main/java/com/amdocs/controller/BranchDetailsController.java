@@ -14,7 +14,7 @@ public class BranchDetailsController {
 	private BranchDetailsService branchDetailsService;
 	
 	@DeleteMapping("/delete/{id}")
-	public void deleteBranchDetailsById(@PathVariable("id") Long id) {
+	public void deleteBranchDetailsById(@PathVariable("id") Integer id) {
 		branchDetailsService.deleteBranchDetails(id);
 	}
 

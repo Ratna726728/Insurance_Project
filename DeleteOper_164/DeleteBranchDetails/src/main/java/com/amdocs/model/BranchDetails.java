@@ -7,14 +7,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name= "branch_details")
+@Table(name="branch_details")
 public class BranchDetails {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String branch_name;
-	private String branch_Address;
+	private String branch_address;
 	private String branch_code;
 	private String branch_ifsc;
 	private String branch_city;
@@ -23,10 +23,10 @@ public class BranchDetails {
 	private String branch_zipcode;
 	
 //	generating getters and setters
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getBranch_name() {
@@ -35,11 +35,11 @@ public class BranchDetails {
 	public void setBranch_name(String branch_name) {
 		this.branch_name = branch_name;
 	}
-	public String getBranch_Address() {
-		return branch_Address;
+	public String getBranch_address() {
+		return branch_address;
 	}
-	public void setBranch_Address(String branch_Address) {
-		this.branch_Address = branch_Address;
+	public void setBranch_address(String branch_address) {
+		this.branch_address = branch_address;
 	}
 	public String getBranch_code() {
 		return branch_code;
@@ -81,7 +81,7 @@ public class BranchDetails {
 //	overriding toString() method
 	@Override
 	public String toString() {
-		return "BranchDetaills [id=" + id + ", branch_name=" + branch_name + ", branch_Address=" + branch_Address
+		return "BranchDetaills [id=" + id + ", branch_name=" + branch_name + ", branch_address=" + branch_address
 				+ ", branch_code=" + branch_code + ", branch_ifsc=" + branch_ifsc + ", branch_city=" + branch_city
 				+ ", branch_state=" + branch_state + ", branch_country=" + branch_country + ", branch_zipcode="
 				+ branch_zipcode + "]";

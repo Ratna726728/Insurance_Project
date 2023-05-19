@@ -1,4 +1,4 @@
-package com.amdocs.application;
+package com.amdocs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
