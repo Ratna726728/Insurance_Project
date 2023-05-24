@@ -9,5 +9,5 @@ import com.amdocs.model.PolicySchedule;
 public interface PolicyScheduleRepository extends CrudRepository<PolicySchedule, Serializable> {
 
 	public PolicySchedule findById(Integer id);
-
+    
 }

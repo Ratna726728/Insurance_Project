@@ -10,6 +10,7 @@ import com.amdocs.service.PolicyScheduleService;
 @Service
 public class PolicyScheduleServiceImpl implements PolicyScheduleService {
 
+	private static final Object PolicySchedule = null;
 	// inject repository reference
 	@Autowired
 	private PolicyScheduleRepository policyScheduleRepository;
@@ -20,4 +21,9 @@ public class PolicyScheduleServiceImpl implements PolicyScheduleService {
 		return policySchedule;
 	}
 
+	@Override
+	public PolicySchedule savePolicySchedule(PolicySchedule policySchedule) {
+		PolicySchedule policySchedule1 = policyScheduleRepository.save(policySchedule);
+		return policySchedule;
+	}
 }

@@ -7,5 +7,7 @@ public interface PolicyScheduleService {
 	// fecth the data based on id
 
 	public PolicySchedule getPolicyScheduleByID(Integer id);
+	
+	public  PolicySchedule savePolicySchedule(PolicySchedule policySchedule);
 
 }
