@@ -16,7 +16,7 @@ public class ClaimDetailsController {
 	private ClaimDetailsService claimDetailsService;
 		
 	// Update operation
-    @PutMapping("/departments/{id}")
+    @PutMapping("/update/{id}")
  
     public ClaimDetails updateClaimDetails(@RequestBody ClaimDetails claimDetails, @PathVariable("id") Long id) {
         
