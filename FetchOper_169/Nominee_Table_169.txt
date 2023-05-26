@@ -1,0 +1,34 @@
+use insuarance_test;
+
+
+
+create table nominee(id int(255) primary key auto_increment, 
+nominee_name varchar(255),
+nominee_age varchar(255),
+nominee_gender varchar(255),
+nominee_address varchar(255),
+nominee_policy_name varchar(255),
+nominee_pan_id varchar(255),
+nominee_consent varchar(255),
+nominee_takeback_amout varchar(255));
+
+
+
+INSERT INTO `insuarance_test`.`nominee` (`id`, `nominee_name`, `nominee_age`, `nominee_gender`, `nominee_address`, `nominee_policy_name`, `nominee_pan_id`, `nominee_consent`, `nominee_takeback_amout`) 
+
+VALUES ('1', 'Ratnadeep Tayade', '24', 'male', 'Akola', 'Jeevan Suraksha', 'BXGT01014T', 'Yes', '500000');
+
+
+INSERT INTO `insuarance_test`.`nominee` (`id`, `nominee_name`, `nominee_age`, `nominee_gender`, `nominee_address`, `nominee_policy_name`, `nominee_pan_id`, `nominee_consent`, `nominee_takeback_amout`) 
+
+VALUES ('2', 'Archana Kute', '26', 'Female', 'Latur', 'Jeevan Suraksha', 'NHTU9876Z', 'Yes', '700000');
+
+
+INSERT INTO `insuarance_test`.`nominee` (`id`, `nominee_name`, `nominee_age`, `nominee_gender`, `nominee_address`, `nominee_policy_name`, `nominee_pan_id`, `nominee_consent`, `nominee_takeback_amout`) 
+
+VALUES ('3', 'Mayuri Gayakwad', '25', 'female', 'Pune', 'Jeevan Beema', 'KIYJD0903D', 'Yes', '250000');
+
+
+INSERT INTO `insuarance_test`.`nominee` (`id`, `nominee_name`, `nominee_age`, `nominee_gender`, `nominee_address`, `nominee_policy_name`, `nominee_pan_id`, `nominee_consent`, `nominee_takeback_amout`) 
+
+VALUES ('4', 'Mahadev Pandge', '22', 'male', 'Mumbai', 'Jeevan Ananad', 'LHTBH7684J', 'Yes', '350000');
